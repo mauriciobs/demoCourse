@@ -41,3 +41,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'net-smtp', require: false
 gem 'rack-cors'
 gem 'mysql2'
+gem 'seed-fu', '~> 2.3', '>= 2.3.5'
