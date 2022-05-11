@@ -21,3 +21,7 @@ default: &default
 development:
   <<: *default
   database: demo_course
+  
+production:
+  <<: *default
+  database: demo_course

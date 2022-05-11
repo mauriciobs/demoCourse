@@ -42,3 +42,5 @@ gem 'net-smtp', require: false
 gem 'rack-cors'
 gem 'mysql2'
 gem 'seed-fu', '~> 2.3', '>= 2.3.5'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'whenever', require: false
