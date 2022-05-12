@@ -1,24 +1,32 @@
-# README
+# Instalación
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para crear la base de datos y correr los seeds.
 
-Things you may want to cover:
+```ruby
+# create the database
+rails db:create
 
-* Ruby version
+# run the migrations
+rails db:migrate
 
-* System dependencies
+# prepopulate the database with initial/default data
+rails db:seed_fu
+```
+Para actualizar el cron del servidor
 
-* Configuration
+```ruby
+whenever --update-crontab
+```
 
-* Database creation
+# Información adicional
 
-* Database initialization
+- La aplicación usa base de datos Mysql.
+- El uso de cron jobs se utiliza la gema **whenever**
+- Para la info dummy se usa la gema **faker**
+- La inserción inicial de datos se usa **seed-fu**
 
-* How to run the test suite
+# ReactJs
 
-* Services (job queues, cache servers, search engines, etc.)
+Para la consulta de usuario y edicion del nombre se usa Reactjs El cual esta sobre el folder **react-course/**
 
-* Deployment instructions
-
-* ...
+![alt text](https://github.com/mauriciobs/demoCourse/blob/main/screen.png)
