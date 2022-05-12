@@ -1,0 +1,7 @@
+.alert {
+    background-color: brown;
+    border-radius: 4px;
+    padding: 15px 10px;
+    margin: 10px 10px;
+    color: azure;
+}

@@ -6,10 +6,10 @@ namespace :course do
         book = Book.where(title: title).take
         book = Book.create(title: Faker::Book.title, content: Faker::Lorem.paragraph) if !book
         CourseHasBook.create(course_id: course.id, book_id: book.id)
-        instructor = User.create(name: Faker::Educator.course_name, email: Faker::Internet.email,role_id: 2)
+        instructor = User.create(name: Faker::Name.name, email: Faker::Internet.email,role_id: 2)
         UserHasCourse.create(user_id: instructor.id, course_id: course.id)
         5.times { 
-            student = User.create(name: Faker::Educator.course_name, email: Faker::Internet.email,role_id: 1)
+            student = User.create(name: Faker::Name.name, email: Faker::Internet.email,role_id: 1)
             UserHasCourse.create(user_id: student.id, course_id: course.id)
             reading = ReadingTime.where(user_id: student.id, book_id: course.id).take
             if reading

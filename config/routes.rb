@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   # end
   namespace :api do
-    get "getData", to: "services#getData"
+    get "getUserList", to: "services#getUserList"
+    post "searchUserEmail", to: "services#searchUserEmail"
+    post "changeUserName", to: "services#changeUserName"
   end
 end
