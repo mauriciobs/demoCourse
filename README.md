@@ -27,7 +27,7 @@ whenever --update-crontab
 
 # ReactJs
 
-Para la consulta de usuario y edicion del nombre se usa Reactjs El cual esta sobre el folder **react-course/**.
+Para la consulta de usuario y edicion del nombre de usuario se usa Reactjs El cual esta sobre el folder **react-course/**.
 Las peticiones se hacen a el API de rails, el cual hace la inserción y consulta de datos.
 
 ![alt text](https://github.com/mauriciobs/demoCourse/blob/main/screen.png)
